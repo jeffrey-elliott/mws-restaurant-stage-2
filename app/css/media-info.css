@@ -1,0 +1,70 @@
+@media only screen and (min-width: 475px) {
+
+  .res-name {
+    font-size: 176%;
+  }
+
+  #restaurant-cuisine, .res-reviews {
+    font-size: 154%;
+  }
+
+
+  .small-day{
+    display: none;
+  }
+
+  .big-day {
+    display: inline;
+  }
+
+  .rev-header-320 {
+    display: none;
+  }
+
+  .rev-header-475 {
+    display: block;
+  }
+
+  #reviews-list li p {
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+
+  #restaurant-hours td {
+    max-width: 20em;
+  }
+
+  body {
+    max-width: 475px;
+    margin: 0 auto;
+  }
+
+
+     .info-main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .info-main>* {
+          flex: 1 1 475px;
+      }
+
+
+}
+
+@media only screen and (min-width: 950px) {
+
+    body {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+      #map-container{
+        min-width: 950px;
+
+      }
+
+    footer      {
+      max-width: 475px;
+      margin-left: 475px;
+    }
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#333">
+  <link rel="manifest" href="/manifest.json">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Restaurant Reviews</title>
+</head>
+
+<body>
+  <header><div></div></header>
+
+  <main id="maincontent">
+    <section id="map-container">
+      <div id="map" tabindex="0" role="application" aria-label="Map with restaurants"></div>
+    </section>
+    <section>
+      <div class="filter-options">
+        <div>
+          <label for="neighborhoods-select">Neighborhood</label>
+          <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+            <option value="all">All Neighborhoods</option>
+          </select>
+        </div>
+        <div>
+          <label for="cuisines-select">Cuisine</label>
+          <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+            <option value="all">All Cuisines</option>
+          </select>
+        </div>
+      </div>
+      <ul id="restaurants-list"></ul>
+    </section>
+  </main>
+
+  <script charset="utf-8" src="js/register.js"></script>
+  <script charset="utf-8" src="js/dbhelper.js"></script>
+  <script charset="utf-8" src="js/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<<api-key>>&libraries=places&callback=initMap"></script>
+
+  <footer id="footer">
+    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+
+</body>
+
+</html>

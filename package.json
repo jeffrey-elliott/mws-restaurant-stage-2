@@ -1,0 +1,22 @@
+{
+  "name": "udacity-mws-project-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Elliott",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "gulp": "^3.9.1",
+    "gulp-replace": "^1.0.0",
+    "idb": "^2.1.3",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

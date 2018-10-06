@@ -1,0 +1,91 @@
+
+
+#breadcrumb {
+  display:none;
+}
+
+.res-name {
+  font-size: 125%;
+}
+
+#restaurant-cuisine, .res-reviews {
+  font-size: 100%;
+}
+
+@media only screen and (min-width: 0) and (max-width: 338px) {
+  .filter-options {
+    padding-bottom: 0.5em;
+  }
+
+  .filter-options div {
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  #restaurants-list {
+    margin: 0;
+  }
+
+  #restaurants-list li {
+    margin: 0;
+    border: none;
+    max-width: 100%;
+  }
+
+  #restaurant-container h1 {
+    margin: 0.5em
+  }
+
+  .rev-comments {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (min-width: 339px) {
+  .filter-options {
+    padding-bottom: 1em;
+  }
+
+  .filter-options div {
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+
+  #restaurants-list {
+    max-width: 339px;
+  }
+
+  #restaurants-list li {
+    margin-left: 0;
+    border: 2px solid #ccc;
+    margin-bottom: 1em;
+  }
+
+  #restaurant-container h1 {
+    margin: 0.5em
+  }
+}
+
+
+
+@media only screen and (min-width: 680px) {
+  #restaurants-list {
+    max-width: 680px;
+  }
+
+  #restaurants-list li {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+  }
+
+  #restaurant-container h1 {
+    margin: 1em;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  #restaurants-list {
+    max-width: 1040px;
+  }
+}
